@@ -3,49 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My College Info</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>My Personal Informations</h1>
-    <h2>My name is Aditi Srivastava</h2>
-    <h3>My branch is CSE</h3>
-    <P>My college name is ABES ENGINEERING COLLEGE</P>
-    <br>
-    <hr>
-    <h1>My Hobbies are</h1>
-  <ul>
-    <li>Singing</li>
-    <li>Reading</li>
-    <li>Playing badminton</li>
+    <h1>Introduction</h1>
+    <p>Welcome to the Course Curriculum This page demonstates the use of HTML formatting ,lists and special characters such as <,>,&</p>
+    <h1>Semister 1 Subjects (Ordered List)</h1>
+    <ol>
+        <li> Mathematics 1 </li>
+        <li> Computer Fundamentals </li>
+        <li> Programming in C</li>
+        <li> Electronics Basics</li>
+     </ol>
+     <h1> Programming Languages (Unordered List)</h1>
+     <ul>
+        <li> C</li>
+         <li> Python </li>
+         <li> Java </li>
+         <li> JavaScript </li>
+     </ul>
+     <h1> Course Description (Description List)</h1>
+     <h2> C Programming </h2>
+     <p> Learn basics of C language loops,arrays and function </p>
+     <h2> Java </h2>
+     <p> Introduction to Object-Oriented Programming concepts </p>
+
+  <style>
+    /* Makes bullets hollow (○) and light gray */
+    ul {
+      list-style-type: circle; /* hollow dots */
+    }
+
+    ul li::marker {
+      color: gray; /* makes the hollow dots lighter */
+    }
+  </style>
+</head>
+<body>
+
+
+
+     <h1> Course Modules (Nested List) </h1>
+        
+     <ol style="display: inline;">
+  <li style="display: inline;"> 1.Module </li>
+  <ol style="display: inline;">
+    <li style="display: inline;">1.Basics</li>
+  </ol>
+
+<ul> <li> Introduction </li>
+  <li> History of Computers </li>
 </ul>
-<hr>
-<img src=https://m.media-amazon.com/images/I/61YZc-HG-7L._SX569_.jpg >
-<hr>
-<a href="https://www.google.com/">google</a>
-<a href="https://www.youtube.com/#">youtube</a>
-<a href=https://www.abes.ac.in>ABES ENGINEERING COLLEGE</a>
-<hr>
-<table>
-    <tr>
-        <th>S no.</th>
-        <th>Subject</th>
-        <th>Marks</th>
-    </tr>
-<tr>
-    <td>1</td>
-    <td>Maths</td>
-    <td>76</td>
-</tr>
-<tr>
-    <td>2</td>
-    <td>Physics</td>
-    <td>77</td>
-</tr>
-<tr>
-    <td>3</td>
-    <td>DSA</td>
-    <td>75</td>
-</tr>
-</table>
-</body
+<ol style="display: inline;">
+  <li style="display: inline;">2.Module </li>
+  <ol style="display: inline;">
+    <li style="display: inline;">2.Programming</li>
+  </ol>
+
+<ul> <li> Variables & Data Types </li>
+  <li> Control Structures </li>
+</ul>
+<h1> Project Work (Mixed List)</h1>
+<ul>
+    <li> Web development project </li>
+<OL> <lI> HTML</lI> 
+<lI> CSS</lI>
+<lI> JavaScript</lI>
+</OL>
+</ul>
+<ul> <li>Database</li>
+    
+<head>
+
+
+    
+    <ol type="A">
+      <li>MY SQL</li>
+      <li>Mongo DB</li>
+      
+    </ol>
+
+</body>
 </html>
