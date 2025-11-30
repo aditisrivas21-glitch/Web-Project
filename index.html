@@ -1,87 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Introduction</h1>
-    <p>Welcome to the Course Curriculum This page demonstates the use of HTML formatting ,lists and special characters such as <,>,&</p>
-    <h1>Semister 1 Subjects (Ordered List)</h1>
-    <ol>
-        <li> Mathematics 1 </li>
-        <li> Computer Fundamentals </li>
-        <li> Programming in C</li>
-        <li> Electronics Basics</li>
-     </ol>
-     <h1> Programming Languages (Unordered List)</h1>
-     <ul>
-        <li> C</li>
-         <li> Python </li>
-         <li> Java </li>
-         <li> JavaScript </li>
-     </ul>
-     <h1> Course Description (Description List)</h1>
-     <h2> C Programming </h2>
-     <p> Learn basics of C language loops,arrays and function </p>
-     <h2> Java </h2>
-     <p> Introduction to Object-Oriented Programming concepts </p>
-
-  <style>
-    /* Makes bullets hollow (○) and light gray */
-    ul {
-      list-style-type: circle; /* hollow dots */
-    }
-
-    ul li::marker {
-      color: gray; /* makes the hollow dots lighter */
-    }
-  </style>
+    <title>ShopEasy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="container">
+    <div class="header">ShopEasy</div>
 
+    <div class="product-card">
+        <img src="https://tiimg.tistatic.com/fp/1/007/753/100-pure-cotton-lightweight-breathable-round-neck-pink-color-plain-men-t-shirt-386.jpg" alt="T-Shirt">
 
-     <h1> Course Modules (Nested List) </h1>
-        
-     <ol style="display: inline;">
-  <li style="display: inline;"> 1.Module </li>
-  <ol style="display: inline;">
-    <li style="display: inline;">1.Basics</li>
-  </ol>
+        <h3>Classic Cotton T-Shirt</h3>
+        <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
 
-<ul> <li> Introduction </li>
-  <li> History of Computers </li>
-</ul>
-<ol style="display: inline;">
-  <li style="display: inline;">2.Module </li>
-  <ol style="display: inline;">
-    <li style="display: inline;">2.Programming</li>
-  </ol>
+        <span class="price">₹799</span> 
+        <span class="old-price">₹1,199</span>
 
-<ul> <li> Variables & Data Types </li>
-  <li> Control Structures </li>
-</ul>
-<h1> Project Work (Mixed List)</h1>
-<ul>
-    <li> Web development project </li>
-<OL> <lI> HTML</lI> 
-<lI> CSS</lI>
-<lI> JavaScript</lI>
-</OL>
-</ul>
-<ul> <li>Database</li>
-    
-<head>
-
-
-    
-    <ol type="A">
-      <li>MY SQL</li>
-      <li>Mongo DB</li>
-      
-    </ol>
+        <button>Add to Cart</button>
+    </div>
+</div>
 
 </body>
 </html>
