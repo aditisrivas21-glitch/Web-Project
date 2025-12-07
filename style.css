@@ -1,32 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
+  text-align: center;
+  font-family: Arial;
+  background: #f14481;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    border: 1px solid gray;
-    padding: 10px;
-    background: #d5c9c9;
+.card {
+  background: #ddf339;
+  width: 250px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 12px;
+  
 }
 
-.title {
-    text-align: center;
-    color: brown;
-    font-family: cursive;
+img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.nav-box {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 10px;
-    ;
+.price {
+  color: rgb(102, 38, 242);
+  font-weight: bold;
 }
 
 button {
-    padding: 5px 10px;
-    border: 1px solid #888;
-    background-color: #469bcf;
-    cursor: pointer;
+  background: rgb(54, 5, 119);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(46, 230, 236);
 }
