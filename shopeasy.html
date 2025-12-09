@@ -1,26 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ShopEasy</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Experiment 10</title>
+  <style>
+    .header {
+      background: black;   
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 16px;
+    }
+    .brand {
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .nav {
+      display: flex;
+      justify-content: center; 
+      gap: 28px;
+      flex: 1; 
+    }
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      padding: 6px 0;
+    }
+    .actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .action {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 4px 6px;
+    }
+    /* hover effects */
+    .nav-link:hover,
+    .action:hover,
+    .brand:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 520px) {
+      .nav { display: none; } 
+      .header { padding: 10px; }
+    }
+  </style>
 </head>
 <body>
+  <header class="header">
+    <div class="brand">ShopEase</div>
+    <nav class="nav">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Products</a>
+      <a href="#" class="nav-link">Categories</a>
+      <a href="#" class="nav-link">Deals</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
 
-<div class="container">
-    <div class="header">ShopEasy</div>
-
-    <div class="product-card">
-        <img src="https://tiimg.tistatic.com/fp/1/007/753/100-pure-cotton-lightweight-breathable-round-neck-pink-color-plain-men-t-shirt-386.jpg" alt="T-Shirt">
-
-        <h3>Classic Cotton T-Shirt</h3>
-        <p>Soft, breathable cotton. Regular fit. Available in multiple colors.</p>
-
-        <span class="price">₹799</span> 
-        <span class="old-price">₹1,199</span>
-
-        <button>Add to Cart</button>
+    <div class="actions">
+      <a href="#" class="action">Cart 🛒</a>
+      <a href="#" class="action">Login</a>
     </div>
-</div>
+  </header>
 
+  <main style="padding:1rem;">
+    <h1>Welcome to ShopEase!</h1>
+    <p>Your one-stop destination for all shopping needs.</p>
+  </main>
 </body>
 </html>
