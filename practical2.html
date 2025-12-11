@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Website Layout</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body{
+        background:rgb(203, 132, 196);
+        padding:20px;
+    }
+
+    .container{
+        width:90%;
+        max-width:900px;
+        margin:auto;
+        background:rgb(181, 21, 21);
+        padding:20px;
+        border-radius:10px;
+    }
+
+
+    header{
+        background:#0f9196;
+        padding:15px;
+        font-size:24px;
+        text-align:center;
+        font-weight:bold;
+        border-bottom:2px solid #ddd;
+    }
+
+
+    nav{
+        background:#b9cf11;
+        padding:10px;
+        margin-top:10px;
+        text-align:center;
+    }
+
+    nav a{
+        margin:0 10px;
+        text-decoration:none;
+        color:#333;
+        font-weight:bold;
+    }
+
+
+    .main{
+        display:flex;
+        margin-top:15px;
+        gap:15px;
+    }
+
+    
+    .side-menu{
+        width:25%;
+        background:#f7f7f7;
+        padding:15px;
+        border:1px solid #ddd;
+    }
+
+    
+    .content{
+        width:75%;
+        background:#fdfdfd;
+        padding:15px;
+        border:1px solid #ddd;
+    }
+
+    footer{
+        margin-top:20px;
+        background:#ececec;
+        padding:10px;
+        text-align:center;
+        border-top:2px solid #ddd;
+    }
+
+
+    @media (max-width:700px){
+        .main{
+            flex-direction:column;
+        }
+        .side-menu, .content{
+            width:100%;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        Shop Easy
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="main">
+        <div class="side-menu">
+            <h3>Side Menu</h3>
+            <p>• Menu 1</p>
+            <p>• Menu 2</p>
+            <p>• Menu 3</p>
+        </div>
+
+        <div class="content">
+            <h3>Content Area</h3>
+            <p>This is where your main content will appear.</p>
+        </div>
+    </div>
+
+    <footer>
+        Footer Section
+    </footer>
+
+</div>
+
+</body>
+</html>
